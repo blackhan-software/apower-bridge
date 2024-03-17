@@ -22,51 +22,59 @@ https://book.getfoundry.sh/
 ### Build
 
 ```shell
-$ forge build
+forge build
 ```
 
 ### Test
 
 ```shell
-$ forge test
+forge test
 ```
 
 ### Format
 
 ```shell
-$ forge fmt
+forge fmt
 ```
 
 ### Gas Snapshots
 
 ```shell
-$ forge snapshot
+forge snapshot
 ```
 
 ### Anvil
 
 ```shell
-$ anvil
+anvil
 ```
 
 ### Deploy
 
+Deploy the `MySource` calculator facade on the mainnet (or testnet):
+
 ```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
+forge script script/MySource.s.sol --rpc-url main ## --broadcast
+```
+
+Deploy the `MyTarget` calculator implementation on the APower subnet:
+
+```shell
+forge script script/MyTarget.s.sol --rpc-url apow ## --broadcast
 ```
 
 ### Cast
 
 ```shell
-$ cast <subcommand>
+cast <subcommand>
 ```
 
 ### Help
 
 ```shell
-$ forge --help
-$ anvil --help
-$ cast --help
+forge --help
+anvil --help
+cast --help
 ```
 
 ## Copyright
