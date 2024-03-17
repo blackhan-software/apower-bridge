@@ -1,0 +1,1 @@
+@avalabs/subnet-evm-contracts@1.2.0/=lib/teleporter/contracts/lib/subnet-evm/contracts/
